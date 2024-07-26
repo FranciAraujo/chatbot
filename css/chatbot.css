@@ -1,0 +1,121 @@
+/* burbujas de diálogo */
+
+.chat-bubble {
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin: 20px 0; /* Espacio tanto arriba como abajo de cada burbuja que no me funciono poner solo esto */
+    max-width: 80%;
+    /*display: inline-block; */
+    position: relative;
+    word-wrap: break-word;
+   
+
+    
+   
+    
+}
+
+
+
+/*pregunta del usuario*/
+.chat-bubble-question {
+background-color: #C2CBD3 ;
+color: #041A2D;
+align-self: flex-start;
+font-family: sans-serif;
+font-size: 0.7rem;
+margin-bottom: 20px; /* Añade un margen inferior para espacio entre burbujas */
+
+
+margin-right: auto; /* Márgenes automáticos para alinear a la izquierda */
+    margin-left: 80px;  /* Margen a la izquierda */
+    text-align: left;   /* Texto alineado a la izquierda */
+    
+
+}
+
+/*respuesta del chat*/
+.chat-bubble-answer {
+background-color: #043765;
+color: #fff;
+align-self: flex-end;
+font-family: sans-serif;
+font-size: 0.7rem;
+margin-bottom: 20px; /* Añade un margen inferior para espacio entre burbujas */
+text-align: left;
+
+
+}
+
+
+
+/* Truncar o texto */
+.text-truncate {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+
+word-break: break-all;
+
+}
+
+
+
+/* Ajustar las palabras largas */
+.text-break {
+    word-break: break-word;
+}
+
+
+
+/* Contenedor del chat */
+.chat-box {
+/*display: flex;*/
+/*flex-direction: column;*/
+height: calc(100% - 100px); /* Ajustar según el tamaño del encabezado y el formulario */
+
+/*--> EXEMPLO STACKOVERFLOW P ALARGAR INPUT A MEDIDA Q USUARIO ESCRIBE:*/
+display: inline-block;
+min-width: 100px;
+
+
+
+
+overflow-y: auto;
+
+padding: 10px 15px; /* Añadir padding para espacio interior */
+
+/*test*/
+margin-right: auto; /* Márgenes automáticos para alinear a la izquierda */
+    margin-left: 5px;  /* Margen a la izquierda */
+    text-align: left;   /* Texto alineado a la izquierda */
+
+}
+
+.chat-header {
+/*display: flex;*/    
+/*justify-content: space-between;*/
+/*align-items: center;*/
+padding: 10px;
+background-color: #043765;
+color: white;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+/* Formulario del chat */
+.chat-form {
+/*display: flex;*/ /*quitado de aqui */
+padding: 10px;
+border-top: 1px solid #ddd;
+
+
+}
+
+.chat-form input[type="textarea"] {
+/*flex: 1; /*quitado de aqui */
+margin-right: 10px;
+
+}
+
+
