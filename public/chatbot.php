@@ -30,7 +30,7 @@ include "../../../inc/includes.php"; ?>
     widget_button += 'Show chatbot</button>';
 
     var widget_form = `
-        <textarea id="user-input" class="form-control" placeholder="<?php echo __(
+        <input type="text" id="user-input" class="form-control" placeholder="<?php echo __(
             "Write your message here...",
             "chatbot"
         ); ?>"></textarea>
